@@ -47,7 +47,7 @@ st.markdown("""
 @st.cache_data
 def load_and_preprocess_data():
     """Load and preprocess the dataset with optimizations"""
-    data = pd.read_csv('ecommerce.csv')
+    data = pd.read_csv('amazon.csv')
     
     # Clean rating column
     data['rating'] = pd.to_numeric(data['rating'], errors='coerce')
